@@ -1,0 +1,362 @@
+.pro-det {
+    padding: 0 150px;
+}
+
+.pro-info .cat-det {
+    color: #B2B1B9;
+    display: inline-block;
+}
+
+.pro-info .nom-det {
+    color: #222;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.pro-info .dispo {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.pro-info .dispo i {
+    color: #5FD068;
+    font-size: 23px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.pro-info .prix-det {
+    color: #FF5D5D;
+    font-weight: 700;
+}
+
+.pro-info .whatsapp {
+    text-decoration: none;
+    color: #fff;
+    background: #5FD068;
+    padding: 5px 40px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.pro-info .whatsapp i {
+    font-size: 24px;
+    margin-left: 10px;
+    transform: translateY(2.5px);
+    transition: all .2 ease-in-out;
+}
+
+.pro-info .whatsapp:hover {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pro-info .descri {
+    height: 100px;
+    overflow: hidden;
+}
+
+.pro-info .descri.active {
+    height: auto;
+}
+
+.pro-info .descri h6,
+.marq-det h6 {
+    color: #222;
+    font-weight: 700;
+}
+
+.pro-info .descri p {
+    padding-left: 20px;
+    padding-right: 40px;
+    color: #595260;
+    font-size: 15px;
+}
+
+.pro-info .show-more {
+    font-weight: 700;
+    color: #595260;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pro-info .show-more i {
+    margin-left: 5px;
+}
+
+.image-det {
+    z-index: -1;
+}
+
+.image-container {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: inherit;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    display: block;
+    position: absolute;
+    transition: all 0.03s linear;
+}
+
+.image-container:hover {
+    cursor: zoom-in;
+}
+
+.list-image {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.list-image li {
+    width: 22%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.15s linear;
+}
+
+.list-image li:nth-child(4) {
+    margin-right: 0px;
+}
+
+.list-image li.image-active {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+}
+
+.marq-det {
+    height: 10vh;
+}
+
+.swiper.proswiper {
+    width: 100%;
+    height: 330px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    transform: scale(0.5);
+}
+
+/* card produits */
+.card-inner a {
+    text-decoration: none;
+}
+
+.card-inner .card {
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    width: 200px;
+    max-height: 290px;
+    min-height: 290px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+}
+
+.card-inner a:hover .card {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-inner .card .img {
+    overflow: hidden;
+}
+
+.card-inner .card img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.card-inner a:hover .card img {
+    transform: scale(1.2);
+}
+
+.card-inner .card .heart {
+    position: absolute;
+    top: 5px;
+    right: -50px;
+    color: #B2B1B9;
+    z-index: 10;
+    transition: all .2s ease-in-out;
+}
+
+.card-inner .card .heart:hover {
+    color: #595260;
+}
+
+.card-inner a:hover .card .heart {
+    right: 10px;
+}
+
+.card-inner .card .pro-nom {
+    color: #222;
+    padding: 0px 10px;
+}
+
+.card-inner .card .pro-prix {
+    position: absolute;
+    color: #FF5D5D;
+    font-weight: 800;
+    left: 10px;
+    bottom: 10px;
+}
+
+.swiper-title h1 {
+    font-size: 26px;
+}
+
+@media only screen and (max-width: 1433px) {
+    .pro-det {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .pro-det {
+        padding: 0 80px;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    .pro-det {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .pro-det {
+        padding: 0px;
+    }
+
+    .pro-info span {
+        font-size: 14px;
+    }
+
+    .pro-info .nom-det {
+        font-size: 20px;
+    }
+
+    .pro-info .prix-det {
+        font-size: 18px;
+    }
+
+    .pro-info .whatsapp {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+
+    .pro-info .whatsapp i {
+        font-size: 18px;
+    }
+
+    .pro-info .descri h6 {
+        font-size: 14px;
+    }
+
+    .pro-info .descri p {
+        font-size: 13px;
+    }
+
+    .pro-info .show-more span,
+    .pro-info .show-more i {
+        font-size: 12px;
+    }
+
+    .pro-info .marq-det h6 {
+        font-size: 14px;
+    }
+
+    .pro-info .marq-det img {
+        width: 100px;
+    }
+
+    .swiper-title h1 {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .image-container {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pro-det {
+        padding: 0 20px;
+    }
+
+    .pro-info {
+        margin-top: 40px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .pro-info .marq-det h6 {
+        font-size: 12px;
+    }
+
+    .swiper-title h1 {
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .swiper.proswiper.size-det {
+        width: 100%;
+        height: 265px;
+    }
+    .proswiper.size-det .card-inner .card {
+        width: 160px;
+        max-height: 240px;
+        min-height: 240px;
+    }
+    
+    .proswiper.size-det .card-inner .card img {
+        height: 140px;
+    }
+}

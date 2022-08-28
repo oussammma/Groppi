@@ -1,0 +1,23 @@
+.goToTop {
+    background: #51C4D3;
+    right: 30px;
+    bottom: 30px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: translateX(200%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.19, 1.5, 0.8, 1.5);
+    z-index: 1000;
+}
+.goToTop i {
+    line-height: 35px;  
+    font-size: 22px;
+    color: #fff;
+}
+.goToTop.up-show {
+    opacity: 1;
+    transform: translateX(0%);
+}

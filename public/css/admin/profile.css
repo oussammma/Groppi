@@ -1,0 +1,39 @@
+.col-title {
+    margin-bottom: 10px;
+}
+
+.col-title .i {
+    background: #FBB454;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.profil-cont input {
+    background: none;
+    border: 1px solid #798777;
+    outline: none;
+    height: 35px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+.profil-cont input::placeholder {
+    font-size: 14px;
+}
+.profil-cont input:focus {
+    border-color: #51C4D3;
+    box-shadow: 0 0.5px 3px 0.5px #51C4D3;
+}
+
+.profil-cont label {
+    font-weight: 500;
+    margin: 5px;
+    display: block;
+}
+
+.profil-cont button {
+    background: #0078AA;
+}

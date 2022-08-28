@@ -1,0 +1,63 @@
+.cont-body {
+    padding: 0 150px;
+}
+.pro-title h1 {
+    font-weight: 600;
+}
+.service .service-inner {
+    background: #fff;
+    border: 1px solid #4285F4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 75%;
+}
+
+.service .service-inner h6 {
+    font-weight: 600;
+    color: #4285F4;
+}
+
+.service .service-inner span {
+    font-size: 14px;
+    color: #595260;
+}
+@media only screen and (max-width: 1433px) {
+    .cont-body {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1112px) {
+    .cont-body {
+        padding: 0px;
+    }
+    .service .service-inner {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .cont-body {
+        padding: 0px 30px;
+    }
+    .service .service-inner {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cont-body {
+        padding: 0px 50px;
+    }
+}
+@media only screen and (max-width: 516px) {
+    .cont-body {
+        padding: 0px 30px;
+    }
+    .service .service-inner img {
+        width: 50px;
+    }
+    .service .service-inner h6{
+        font-size: 14px;
+    }
+    .service .service-inner span{
+        font-size: 12px;
+    }
+}

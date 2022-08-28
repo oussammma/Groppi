@@ -1,0 +1,128 @@
+/* checkbox */
+.toggle {
+    --width: 50px;
+    --height: calc(var(--width) / 2);
+    --border-radius: calc(var(--height) / 2);
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle__input {
+    display: none;
+}
+
+.toggle__fill {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background: #dddddd;
+    transition: background 0.2s;
+}
+
+.toggle__input:checked~.toggle__fill {
+    background: #009578;
+}
+
+.toggle__fill::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--height);
+    width: var(--height);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius);
+    transition: transform 0.2s;
+}
+
+.toggle__input:checked~.toggle__fill::after {
+    transform: translateX(var(--height));
+}
+
+/* produit detais */
+.pro-info .cat-det {
+    color: #B2B1B9;
+    display: inline-block;
+}
+
+.pro-info .nom-det {
+    color: #222;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.pro-info .dispo {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.pro-info .dispo i {
+    color: #5FD068;
+    font-size: 23px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.pro-info .prix-det {
+    color: #FF5D5D;
+    font-weight: 700;
+}
+
+.pro-info .whatsapp {
+    text-decoration: none;
+    color: #fff;
+    background: #5FD068;
+    padding: 5px 40px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.pro-info .whatsapp i {
+    font-size: 24px;
+    margin-left: 10px;
+    transform: translateY(2.5px);
+    transition: all .2 ease-in-out;
+}
+
+.pro-info .whatsapp:hover {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pro-info .descri {
+    height: 100px;
+    overflow: hidden;
+}
+
+.pro-info .descri.active {
+    height: auto;
+}
+
+.pro-info .descri h6,
+.marq-det h6 {
+    color: #222;
+    font-weight: 700;
+}
+
+.pro-info .descri p {
+    padding-left: 20px;
+    padding-right: 40px;
+    color: #595260;
+    font-size: 15px;
+}
+
+.pro-info .show-more {
+    font-weight: 700;
+    color: #595260;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pro-info .show-more i {
+    margin-left: 5px;
+}

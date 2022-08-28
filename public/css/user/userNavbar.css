@@ -1,0 +1,418 @@
+header .nav1,
+header .nav2 {
+    padding: 0 150px;
+}
+
+header .nav1 {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav1 a {
+    color: #171717;
+    text-decoration: none;
+}
+
+header .nav1 .appelez span {
+    font-weight: bold;
+}
+
+header .nav2 .searsh {
+    position: relative;
+    width: 650px;
+    height: 5vh;
+}
+
+header .nav2 .searsh i {
+    position: absolute;
+    right: 1%;
+    top: 23%;
+    font-size: 22px;
+    cursor: pointer;
+    color: #51C4D3;
+    transition: all .2s ease-in-out;
+}
+
+header .nav2 .searsh i:hover {
+    transform: scale(1.2);
+}
+
+header .nav2 .searsh input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #B2B1B9;
+    border-radius: 8px;
+    padding: 0 45px 0 15px;
+}
+
+header .nav2 .searsh input:focus {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+header .nav2 .heart i {
+    color: #B2B1B9;
+    cursor: pointer;
+    position: relative;
+}
+
+header .nav2 .heart i::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    right: -5px;
+    top: -5px;
+    border-radius: 50%;
+}
+
+header .nav3 {
+    transition: all 0.5s ease-in-out;
+}
+
+header .nav3.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+header .nav3.sticky .categorie {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+header .nav3 .categorie {
+    background: #51C4D3;
+    padding: 0px 200px;
+    max-width: 100%;
+}
+
+header .nav3 .categorie .categorie-name {
+    list-style: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+
+header .nav3 .categorie .categorie-name:hover {
+    background: #126E82;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+header .nav3 .categorie li:hover a i {
+    transform: scale(1.4) rotate(-20deg);
+}
+
+header .nav3 .categorie .categorie-name .categorie-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+header .nav3 .categorie .categorie-name .categorie-link i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+}
+
+header .nav3 .categorie .categorie-name .cat-inner {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+    /* padding: 20px; */
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out;
+    z-index: 10;
+}
+
+header .nav3 .categorie .categorie-name .cat-inner::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 10px;
+    transform: rotate(45deg);
+    background: #fff;
+}
+
+header .nav3 .categorie .categorie-name .cat-inner li {
+    list-style: none;
+}
+
+header .nav3 .categorie .categorie-name:hover .cat-inner {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.toggle {
+    display: none;
+}
+
+header .get-searsh {
+    display: none;
+}
+
+header .phone-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 1433px) {
+
+    header .nav1,
+    header .nav2 {
+        padding: 0 100px;
+    }
+
+    header .nav2 .searsh {
+        width: 600px;
+    }
+
+    header .nav3 .categorie .categorie-name .categorie-link {
+        font-size: 16px;
+    }
+
+    header .nav3 .categorie .categorie-name .categorie-link i {
+        font-size: 18px;
+    }
+
+    header .nav3 .categorie {
+        padding: 0px 150px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    header .nav2 .searsh {
+        width: 500px;
+    }
+
+    header .nav3 .categorie {
+        padding: 0px 80px;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    header .nav2 .searsh {
+        width: 400px;
+    }
+
+    header .nav3 .categorie .categorie-name .categorie-link {
+        font-size: 14px;
+    }
+
+    header .nav3 .categorie .categorie-name .categorie-link i {
+        font-size: 16px;
+    }
+
+    header .nav3 .categorie {
+        padding: 0px 60px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+
+    header .nav1,
+    header .nav2 {
+        padding: 0 50px;
+    }
+
+    header .nav3 .categorie {
+        padding: 0px 0px;
+    }
+
+    header .nav3 .categorie .categorie-name {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 917px) {
+    .nav2 a img {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 810px) {
+    header .nav1 {
+        padding: 0px 20px;
+    }
+
+    header .nav2 {
+        padding: 0 0px;
+    }
+
+    header .nav3 .categorie .categorie-name {
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 698px) {
+    .nav2 a img {
+        width: 150px;
+    }
+
+    header .nav2 .searsh {
+        width: 350px;
+    }
+
+    .heart {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    header .nav1 {
+        justify-content: space-around;
+    }
+
+    header .nav1 .head-2,
+    header .nav1 .head-1 a {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle button {
+        background: none;
+        border: none;
+        font-size: 25px;
+        color: #798777;
+    }
+
+    .toggle button .fa-xmark {
+        font-size: 30px;
+    }
+
+    header .nav2 .searsh {
+        position: absolute;
+        top: 150px;
+        z-index: 10;
+        width: 95%;
+        margin: 0 auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    header .nav2 .searsh.show {
+        opacity: 1;
+        visibility: visible;
+        top: 120px;
+    }
+
+    header .nav2 .searsh input {
+        height: 6vh;
+    }
+
+    header .nav2 .searsh i {
+        top: 30%;
+    }
+
+    header .nav3 {
+        display: none;
+    }
+
+    header .nav2 {
+        border-bottom: 4px solid #51C4D3;
+        margin-bottom: 60px;
+        padding: 0 10px;
+    }
+
+    header .get-searsh {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 25px;
+        color: #51C4D3;
+    }
+
+    header .searsh-heart {
+        width: 120px;
+    }
+    header .searsh-heart i{
+        margin-top: 20px;
+    }
+
+    header .phone-nav {
+        display: block;
+        position: absolute;
+        top: 117px;
+        left: 0;
+        z-index: 10;
+        height: auto;
+        transform: translateX(-100%);
+        transition: all .4s cubic-bezier(0.165, 1, 0.44, 1.3);
+        box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+        border-bottom-right-radius: 20px;
+    }
+
+    header .phone-nav.nav-slide {
+        transform: translateX(0%);
+    }
+
+    header .phone-nav .categorie {
+        padding: 0;
+    }
+
+    header .categorie .categorie-name .cat-inner {
+        display: none;
+    }
+
+    header .phone-nav .categorie .categorie-name {
+        list-style: none;
+        line-height: 8vh;
+        height: 8vh;
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #E7D9EA;
+        position: relative;
+        padding: 0 20px; 
+    }
+    header .phone-nav .categorie .categorie-name a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #126E82;
+        text-transform: capitalize;
+    }
+    header .phone-nav .categorie .categorie-name:last-child {
+        border: none;
+    }
+
+    header .phone-nav .categorie .categorie-name .categorie-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #171717;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #126E82;
+        padding-left: 25px;
+    }
+
+    header .categorie .categorie-name a i {
+        margin-right: 10px;
+    }
+}
+#countryList {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}

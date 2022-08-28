@@ -1,0 +1,46 @@
+@extends('layouts.userApp')
+@section('userContent')
+    @include('user.navbar')
+    <div class="marque-pro-body">
+        <div class="mag-title text-start mb-2 d-flex align-items-center mt-4">
+            @if (count($marPro) > 0)
+                <h5 class="mt-2 me-3"><i class="fa-solid fa-right-long me-3"></i>{{ count($marPro) }}  produits dans</h5>
+            @else
+                <h5 class="mt-2 me-3"><i class="fa-solid fa-right-long me-3"></i>Aucun produits dans</h5>
+            @endif
+            @foreach ($marque as $item)
+                <img src="{{ asset($item->img_M) }}" alt="{{ $item->nom }}" width="100px" />
+            @endforeach
+        </div>
+        <div class="mt-0">
+            <div class="row mt-4">
+                @if (count($marPro) > 0)
+                    @foreach ($marPro as $item)
+                        <div class="col-6 col-md-4 col-lg-3 card-inner mb-4">
+                            <a href="{{ route('proDet.index', $item->nom_P) }}">
+                                <div class="card">
+                                    <span class="heart"><i class="fa-solid fa-heart fs-3"></i></span>
+                                    <div class="img">
+                                        <img src="{{ asset($item->img_p_1) }}" alt="" width="100px">
+                                    </div>
+                                    <h6 class="pro-nom text-start">{{ $item->nom_P }}</h6>
+                                    <span class="pro-prix text-start">{{ $item->prix_P }} DH</span>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                @else
+                    <div class="ms-5 opps py-5">
+                        <i class="fa-solid fa-triangle-exclamation text-danger me-2"></i>
+                        <span class="text-secondary">Vérifier plus tard</span>
+                    </div>
+                @endif
+
+            </div>
+        </div>
+    </div>
+    <a href="#" class="goToTop position-fixed">
+        <i class="fa-solid fa-up-long"></i>
+    </a>
+    @include('user.footer')
+@endsection

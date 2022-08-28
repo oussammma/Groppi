@@ -1,0 +1,239 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* table */
+.table-all {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 0.9em;
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.content-table thead tr {
+    background: linear-gradient(to left, #0078AA, #51C4D3);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: 15px;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #0078AA;
+}
+
+.content-table tbody tr td i {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.content-table tbody tr td i.fa-trash {
+    background: #EB1D36;
+}
+
+.content-table tbody tr td i.fa-pen-clip {
+    background: #FBB454;
+}
+
+/* title  */
+.content-title i {
+    font-size: 30px;
+    background: #0078AA;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.content-title .text {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+/* modal  */
+.modal-content {
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important;
+    -webkit-border: 20px !important;
+    -moz-border: 20px !important;
+    border: 20px !important;
+    padding: 20px;
+}
+
+.modal-content .head button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.modal-content .modal-title i {
+    color: #0078AA;
+}
+
+.modal-content .modal-title i.fa-square-pen {
+    color: #FBB454;
+}
+
+.modal-content .modal-body .info-inner {
+    margin-bottom: 15px;
+}
+
+.modal-content .modal-body .info-inner label {
+    font-weight: 600;
+}
+
+.modal-content .modal-body .info-inner select,
+.modal-content .modal-body .info-inner input {
+    background: none;
+    border: 1px solid #798777;
+    outline: none;
+    height: 5vh;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-content .modal-body .info-inner textarea {
+    background: none;
+    border: 1px solid #798777;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-content .modal-body .info-inner input[type='file'] {
+    padding: 1px;
+    overflow: hidden;
+}
+
+.modal-content .modal-body .info-inner input[type='file']::-webkit-file-upload-button {
+    background: #798777;
+    color: #fff;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.modal-content .modal-body .info-inner textarea:focus,
+.modal-content .modal-body .info-inner input:focus {
+    border-color: #51C4D3;
+    box-shadow: 0 0.5px 3px 0.5px #51C4D3;
+}
+
+.cat-cont input {
+    background: none;
+    border: 1px solid #798777;
+    outline: none;
+    height: 35px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cat-cont input:focus {
+    border-color: #51C4D3;
+    box-shadow: 0 0.5px 3px 0.5px #51C4D3;
+}
+
+.cat-cont label {
+    font-weight: 600;
+    margin: 5px;
+}
+
+.cat-cont input[type='file'] {
+    padding: 1px;
+    overflow: hidden;
+}
+
+.cat-cont input[type='file']::-webkit-file-upload-button {
+    background: #798777;
+    color: #fff;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.cat-cont button {
+    background: #0078AA;
+}
+
+.cat-cont .col-title i {
+    color: #0078AA;
+}
+
+.form-info input {
+    width: 80%;
+}
+
+@media (max-width: 992px) {
+    .form-info input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-info input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-info input {
+        width: 100%;
+    }
+}
+.welcome-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.welcome-text h5,
+.welcome-text h5 span{
+    font: normal 36px 'Cookie', cursive;
+}

@@ -1,0 +1,110 @@
+.magasin-body {
+    padding: 0 150px;
+}
+
+.magasin-body .mag-title h1 {
+    font-weight: 600;
+}
+
+.magasin-body .mag-title h1 img {
+    padding-bottom: 5px;
+}
+
+.magasin-body .mag-inner {
+    margin: 0 100px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.magasin-body .mag-inner .mag-info h1 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.magasin-body .mag-inner .mag-info .mag-contact {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.magasin-body .mag-inner .mag-info .mag-contact i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #B2B1B9;
+}
+
+.magasin-body .mag-inner .mag-hour {
+    font-size: 14px;
+    border-left: 2px solid #EEEEEE;
+    padding: 5px 0px 5px 15px;
+}
+
+.magasin-body .mag-inner .mag-hour span {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1433px) {
+    .magasin-body {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .magasin-body {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    .magasin-body .mag-inner .mag-info h1 {
+        font-size: 23px;
+    }
+
+    .magasin-body .mag-inner .mag-info span {
+        font-size: 23px;
+        font-size: 14px;
+    }
+
+    .magasin-body .mag-inner .mag-img img {
+        width: 180px;
+    }
+
+    .magasin-body .mag-inner .mag-hour {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    .magasin-body {
+        padding: 0px;
+    }
+
+    .magasin-body .mag-inner {
+        margin: 0 90px;
+    }
+}
+
+@media only screen and (max-width: 938px) {
+    .magasin-body .mag-inner {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .magasin-body .mag-inner {
+        margin: 0 50px;
+        padding: 20px 0;
+    }
+
+    .magasin-body .mag-inner .mag-img img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .magasin-body .mag-inner {
+        margin: 0 20px;
+    }
+}
