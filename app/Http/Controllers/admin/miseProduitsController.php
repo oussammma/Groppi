@@ -22,7 +22,7 @@ class miseProduitsController extends Controller
             ->select('p.*', 'c.nom as categorie', 'm.nom as marque', "c.id as id_C", "m.id as id_M", "m.img_M as image_M")
             ->orderBy('p.id', 'desc')
             ->get();
-
+        
         $cats = Categories::all();
         $mars = Marques::all();
         return view('admin.miseProduit', compact('pros', 'cats', 'mars'));
